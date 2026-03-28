@@ -1,0 +1,213 @@
+%-------------------------
+% Professional CV Template
+% For use with AutoApply
+% License: MIT
+%-------------------------
+
+\documentclass[12pt,a4paper]{article}
+
+%-------------------------
+% PACKAGES
+%-------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{carlito}  % Carlito font (metrically identical to Calibri)
+\renewcommand*\familydefault{\sfdefault}  % Use sans-serif as default
+\usepackage[margin=0.7in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{parskip}
+
+%-------------------------
+% COLORS
+%-------------------------
+\definecolor{primary}{RGB}{0, 79, 144}
+\definecolor{darkgray}{RGB}{60, 60, 60}
+\definecolor{lightgray}{RGB}{100, 100, 100}
+
+%-------------------------
+% HYPERLINKS
+%-------------------------
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    urlcolor=primary,
+    pdfborder={0 0 0}
+}
+
+%-------------------------
+% SECTION FORMATTING
+%-------------------------
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large\bfseries\color{primary}
+}{}{0em}{}[\color{primary}\titlerule\vspace{-5pt}]
+
+%-------------------------
+% CUSTOM COMMANDS
+%-------------------------
+% Experience entry
+\newcommand{\experienceentry}[4]{
+    \vspace{4pt}
+    \textbf{#1} \hfill \textcolor{lightgray}{#2} \\
+    \textit{#3} \hfill \textcolor{lightgray}{#4}
+    \vspace{2pt}
+}
+
+% Skill category
+\newcommand{\skillcategory}[2]{
+    \textbf{#1:} #2
+}
+
+%-------------------------
+% DOCUMENT
+%-------------------------
+\begin{document}
+
+%-------------------------
+% HEADER
+%-------------------------
+\noindent
+\begin{minipage}[c]{0.5\textwidth}
+    {\Huge\bfseries\color{darkgray} Alex Johnson} \\[4pt]
+    {\large Full-Stack Software Engineer}
+\end{minipage}%
+\begin{minipage}[c]{0.5\textwidth}
+    \raggedleft
+    \begin{tabular}{@{}r@{\hspace{6pt}}l@{}}
+        \textcolor{lightgray}{Email:} & \href{mailto:alex.johnson@email.com}{alex.johnson@email.com} \\
+        \textcolor{lightgray}{Github:} & \href{https://github.com/alexjohnson}{github.com/alexjohnson} \\
+        \textcolor{lightgray}{LinkedIn:} & \href{https://linkedin.com/in/alexjohnson}{linkedin.com/in/alexjohnson} \\
+        \textcolor{lightgray}{Website:} & \href{https://alexjohnson.dev}{alexjohnson.dev}
+    \end{tabular}
+\end{minipage}
+
+%-------------------------
+% SUMMARY
+%-------------------------
+\section{Summary}
+Full-Stack Software Engineer with 7+ years of experience building \textbf{scalable web applications, REST APIs, and cloud-native systems}. Led development of customer-facing platforms serving 500K+ users at TechCorp. Combines strong backend expertise in Python and Node.js with modern frontend skills in React and TypeScript. Passionate about developer experience and clean architecture.
+
+%-------------------------
+% TECHNICAL SKILLS
+%-------------------------
+\section{Technical Skills}
+
+\skillcategory{Languages}{Python, JavaScript, TypeScript, Go} \\[3pt]
+\skillcategory{Frontend}{React, Next.js, Tailwind CSS, HTML/CSS} \\[3pt]
+\skillcategory{Backend}{Node.js, FastAPI, Express, Django, GraphQL} \\[3pt]
+\skillcategory{Infrastructure}{AWS (EC2, Lambda, S3, RDS, SQS), Docker, Kubernetes, Terraform} \\[3pt]
+\skillcategory{Databases}{PostgreSQL, Redis, MongoDB, Elasticsearch} \\[3pt]
+\skillcategory{Practices}{CI/CD, Test-Driven Development, Agile, Code Review, Observability}
+
+%-------------------------
+% PROFESSIONAL EXPERIENCE
+%-------------------------
+\section{Professional Experience}
+
+\experienceentry
+    {Senior Software Engineer}
+    {Mar 2022 -- Present}
+    {\href{https://example.com}{TechCorp}, San Francisco, CA}
+    {}
+
+\begin{itemize}[leftmargin=*, nosep, topsep=2pt]
+    \item Led migration of monolithic Django app to microservices architecture, reducing deployment times by 70\%
+    \item Designed and built real-time notification system (WebSockets + Redis) serving 500K+ monthly active users
+    \item Implemented CI/CD pipeline with GitHub Actions, achieving 95\% test coverage and zero-downtime deployments
+    \item Optimized PostgreSQL queries and introduced connection pooling, reducing API response times by 45\%
+    \item Mentored 3 junior engineers through code reviews, pair programming, and weekly 1:1s
+    \item Led adoption of TypeScript across frontend codebase, reducing production bugs by 30\%
+\end{itemize}
+
+\vspace{6pt}
+\centerline{\color{lightgray}\rule{0.2\textwidth}{0.4pt}}
+\vspace{6pt}
+
+\experienceentry
+    {Software Engineer}
+    {Jun 2019 -- Feb 2022}
+    {\href{https://example.com}{StartupXYZ}, San Francisco, CA}
+    {}
+
+\begin{itemize}[leftmargin=*, nosep, topsep=2pt]
+    \item Built customer analytics dashboard (React + D3.js) used by 200+ enterprise clients for data-driven decisions
+    \item Developed RESTful API platform (FastAPI) handling 10K+ requests/minute with 99.9\% uptime
+    \item Designed event-driven data pipeline (AWS Lambda + SQS) processing 5M+ daily events
+    \item Implemented OAuth 2.0 and RBAC authorization system supporting multi-tenant architecture
+    \item Collaborated with product team to ship features on 2-week sprint cycles
+\end{itemize}
+
+\vspace{6pt}
+\centerline{\color{lightgray}\rule{0.2\textwidth}{0.4pt}}
+\vspace{6pt}
+
+\experienceentry
+    {Junior Software Developer}
+    {Aug 2017 -- May 2019}
+    {\href{https://example.com}{DigitalAgency Co}, Portland, OR}
+    {}
+
+\begin{itemize}[leftmargin=*, nosep, topsep=2pt]
+    \item Built responsive web applications for 15+ clients using React, Node.js, and PostgreSQL
+    \item Developed internal project management tool that reduced project tracking time by 40\%
+    \item Created automated testing suite with Jest and Cypress, improving release confidence
+    \item Participated in client meetings to gather requirements and translate them into technical specifications
+\end{itemize}
+
+%-------------------------
+% SIDE PROJECTS
+%-------------------------
+\section{Side Projects}
+
+\textbf{\href{https://github.com/alexjohnson/taskflow}{TaskFlow CLI}} -- Terminal-based project management tool
+
+\begin{itemize}[leftmargin=*, nosep, topsep=2pt]
+    \item Built CLI tool for managing tasks with Kanban-style workflow, priorities, and time tracking
+    \item Implemented SQLite backend with full-text search for fast task retrieval
+    \item Added integration with GitHub Issues API for syncing tasks across platforms
+    \item Tech: Python, Click, SQLite, Rich (terminal UI)
+\end{itemize}
+
+\vspace{6pt}
+
+\textbf{\href{https://github.com/alexjohnson/weatherlens}{WeatherLens}} -- Real-time weather dashboard
+
+\begin{itemize}[leftmargin=*, nosep, topsep=2pt]
+    \item Built responsive weather dashboard aggregating data from multiple weather APIs
+    \item Implemented interactive maps with Mapbox GL for visualizing weather patterns
+    \item Added PWA support for offline access and push notifications for severe weather alerts
+    \item Tech: React, TypeScript, Mapbox GL, OpenWeather API
+\end{itemize}
+
+%-------------------------
+% EDUCATION
+%-------------------------
+\section{Education}
+
+\textbf{Bachelor of Science in Computer Science} \hfill \textcolor{lightgray}{2013 -- 2017} \\
+University of California, Berkeley \\
+\textit{Minor in Mathematics -- Focus on algorithms and distributed systems}
+
+%-------------------------
+% CERTIFICATIONS
+%-------------------------
+\section{Certifications}
+
+\href{https://example.com/cert}{\textbf{AWS Certified Solutions Architect -- Associate}} \hfill \textcolor{lightgray}{Mar 2023} \\
+\href{https://example.com/cert}{\textbf{Google Professional Cloud Developer}} \hfill \textcolor{lightgray}{Nov 2021}
+
+%-------------------------
+% LANGUAGES
+%-------------------------
+\section{Languages}
+
+\begin{tabular}{@{}l@{\hspace{12pt}}l@{}}
+    English & Native \\
+    Spanish & Conversational
+\end{tabular}
+
+\end{document}

@@ -1,0 +1,104 @@
+%-------------------------
+% Cover Letter Template
+% Matches cv.tex styling for consistent branding
+%
+% SETUP: Replace these placeholders with your info:
+%   YOUR_NAME_HERE      -> Your full name
+%   CITY_COUNTRY_HERE   -> Your city and country
+%   EMAIL_HERE          -> Your email address
+%   WEBSITE_HERE        -> Your website (or remove that line)
+%
+% The /apply command will fill in:
+%   JOB_TITLE_HERE, COMPANY_NAME_HERE,
+%   COMPANY_ADDRESS_HERE, COVER_LETTER_BODY_HERE
+%-------------------------
+
+\documentclass[12pt,a4paper]{article}
+
+%-------------------------
+% PACKAGES (same as CV)
+%-------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{carlito}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{parskip}
+
+%-------------------------
+% COLORS (same as CV)
+%-------------------------
+\definecolor{primary}{RGB}{0, 79, 144}
+\definecolor{darkgray}{RGB}{60, 60, 60}
+\definecolor{lightgray}{RGB}{100, 100, 100}
+
+%-------------------------
+% HYPERLINKS
+%-------------------------
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    urlcolor=primary,
+    pdfborder={0 0 0}
+}
+
+%-------------------------
+% DOCUMENT
+%-------------------------
+\begin{document}
+
+%-------------------------
+% HEADER
+%-------------------------
+\noindent
+{\Large\bfseries\color{darkgray} YOUR_NAME_HERE} \\[4pt]
+{\color{lightgray} CITY_COUNTRY_HERE \textbar{} \href{mailto:EMAIL_HERE}{EMAIL_HERE} \textbar{} \href{https://WEBSITE_HERE}{WEBSITE_HERE}}
+
+\vspace{24pt}
+
+%-------------------------
+% DATE
+%-------------------------
+\noindent
+\today
+
+\vspace{16pt}
+
+%-------------------------
+% RECIPIENT (Claude fills this)
+%-------------------------
+\noindent
+% COMPANY_NAME_HERE
+% COMPANY_ADDRESS_HERE
+
+\vspace{16pt}
+
+%-------------------------
+% SUBJECT LINE
+%-------------------------
+\noindent
+\textbf{Re: JOB_TITLE_HERE}
+
+\vspace{20pt}
+
+%-------------------------
+% BODY (Claude fills this)
+%-------------------------
+% COVER_LETTER_BODY_HERE
+
+\vspace{24pt}
+
+%-------------------------
+% CLOSING
+%-------------------------
+\noindent
+Best regards,
+
+\vspace{40pt}
+
+\noindent
+\textbf{YOUR_NAME_HERE}
+
+\end{document}
